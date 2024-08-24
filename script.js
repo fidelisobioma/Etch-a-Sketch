@@ -14,4 +14,7 @@ let createBoxes = () => {
   box.style.cssText = `box-sizing: border-box;width: ${boxSize}px;height: ${boxSize}px; background-color:#ccc;  border: 1px solid white;`;
   container.appendChild(box);
 };
-createBoxes();
+//create multiple boxes
+for (i = 0; i < boxes; i++) {
+  createBoxes();
+}
