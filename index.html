@@ -7,7 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="grid_container"></div>
-    <script src="script.js"></script>
+    <div>
+      <div class="toolbar">
+        <input type="number" min="1" max="100" value="16" />
+        <button class="insert">Insert</button>
+        <div class="color_container">
+          <div class="color_theme btn" id="red"></div>
+          <div class="color_theme btn" id="yellow"></div>
+          <div class="color_theme btn" id="green"></div>
+          <input id="custom_color" class="btn" type="color" />
+          <button class="color_theme btn" id="#ccc">Erase</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+      <br />
+      <span class="message"></span>
+      <br />
+      <div class="container"></div>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
